@@ -22,7 +22,7 @@ resource "flexibleengine_networking_secgroup_v2" "secgroup" {
 
 resource "flexibleengine_css_cluster_v1" "cluster" {
   name           = "terraform_test_cluster"
-  engine_version = "7.1.1"
+  engine_version = "7.6.2"
   node_number    = 1
 
   node_config {
@@ -63,7 +63,7 @@ The following arguments are supported:
 
 * `engine_version` -
   (Required)
-  Engine version. Versions 6.5.4 and 7.1.1 are supported. Changing this parameter will create a new resource.
+  Engine version. Versions 6.5.4, 7.1.1 and 7.6.2 are supported. Changing this parameter will create a new resource.
 
 * `node_number` -
   (Optional)
