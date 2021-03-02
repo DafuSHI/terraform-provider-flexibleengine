@@ -23,6 +23,8 @@ resource "flexibleengine_vpc_subnet_v1" "subnet_v1" {
   cidr       = var.subnet_cidr
   gateway_ip = var.subnet_gateway_ip
   vpc_id     = flexibleengine_vpc_v1.vpc_v1.id
+  primary_dns = 100.125.0.41
+  secondary_dns = 100.126.0.41
 }
 
 resource "flexibleengine_vpc_subnet_v1" "subnet_with_tags" {
