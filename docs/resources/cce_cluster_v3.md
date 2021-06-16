@@ -4,7 +4,7 @@ subcategory: "Cloud Container Engine (CCE)"
 
 # flexibleengine_cce_cluster_v3
 
-Provides a cluster resource (CCE).
+Provides a cluster resource (CCE). Please note that the subnet hosting CCE cluster must in advance configure dns address by specifying the related parameter ( [dns_list](https://registry.terraform.io/providers/FlexibleEngineCloud/flexibleengine/latest/docs/resources/vpc_subnet_v1#dns_list) for [subnet_v1](https://registry.terraform.io/providers/FlexibleEngineCloud/flexibleengine/latest/docs/resources/vpc_subnet_v1) and [dns_nameservers](https://registry.terraform.io/providers/FlexibleEngineCloud/flexibleengine/latest/docs/resources/networking_subnet_v2#dns_nameservers) for [subnet_v2](https://registry.terraform.io/providers/FlexibleEngineCloud/flexibleengine/latest/docs/resources/networking_subnet_v2). For example you can use internal default DNS address 100.126.0.41, 100.125.0.41.   
 
 ## Example Usage
 
